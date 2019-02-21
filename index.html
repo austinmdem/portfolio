@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="shortcut icon"
+      href="./images/titlelogo.png"
+      type="image/x-icon"
+    />
+    <link rel="icon" href="./images/titlelogo.png type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/normalize.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <title>Austin Deming | Web Developer</title>
+  </head>
+  <body>
+    <!--Navigation-->
+    <div class="nav-container" id="main">
+      <nav class="main-nav layer" id="main-nav-scroll">
+        <div class="logo">
+          <a href="#"
+            ><img src="./images/logo.png" alt="AD Web Development"
+          /></a>
+        </div>
+        <ul
+          class="nav-list-item"
+          data-aos="fade-down"
+          data-aos-delay="200"
+          data-aos-easing="ease-in-out"
+        >
+          <a data-scroll href="#aboutme"><li>About Me</li> </a>
+          <a data-scroll href="#projects"><li>Projects</li></a>
+          <a href="#contact"><li>Contact</li></a>
+          <a
+            href="./resources/AustinDemingResume.pdf"
+            download="AustinDemingResume"
+            ><li>Resume <i class="fas fa-file-download"></i></li
+          ></a>
+        </ul>
+        <span class="open-side">
+          <a href="javascript:void(0)" onclick="openSideMenu()">
+            <svg width="30" height="30">
+              <path d="M0,5 30, 5" stroke="azure" stroke-width="5" />
+              <path d="M0,14 30, 14" stroke="azure" stroke-width="5" />
+              <path d="M0,23 30, 23" stroke="azure" stroke-width="5" />
+            </svg>
+          </a>
+        </span>
+        <div id="side-menu" class="side-nav">
+          <a
+            href="javascript:void(0)"
+            class="btn-close"
+            onclick="closeSideMenu()"
+            ><img src="./images/titlelogo.png" alt=""
+          /></a>
+
+          <a data-scroll href="#aboutme">About Me</a>
+          <a data-scroll href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+          <a href="./resources/AustinDemingResume.pdf" download="AustinDemingResume">Resume <i class="fas fa-file-download"></i></a>
+        </div>
+      </nav>
+    </div>
+    <!--End of Navigation-->
+    <!--Header-->
+    <header class="main-header">
+      <h1>
+        <a
+          href="javascript:void()"
+          class="typewrite break-words"
+          data-period="2000"
+          data-type='[ "Hi, my name is Austin.", "I am creative.", "I love to design.", "I love to develop." ]'
+        ></a>
+        <span class="wrap"></span>
+      </h1>
+      <div class="bottom-header">
+        <div class="social-icons" data-aos="fade">
+          <a href="https://github.com/austinmdem"
+            ><i
+              class="fab fa-github fa-3x"
+              title="Austin's Github"
+              aria-hidden="true"
+            ></i
+          ></a>
+          <a href="#"
+            ><i
+              class="fab fa-linkedin fa-3x"
+              title="Austin's LinkedIn"
+              aria-hidden="true"
+            ></i
+          ></a>
+          <a href="#"
+            ><i
+              class="fa fa-envelope fa-3x"
+              title="Email Austin"
+              aria-hidden="true"
+            ></i
+          ></a>
+        </div>
+        <a data-scroll href="#aboutme"
+          ><i class="fas fa-chevron-down fa-3x animated bounce"></i
+        ></a>
+      </div>
+    </header>
+    <!--End of Header-->
+    <!--Main About Me-->
+    <div class="main-container" id="aboutme">
+      <div class="about-header">
+        <h1
+          data-aos="slide-right"
+          data-aos-delay="300"
+          data-aos-duration="300"
+          data-aos-easing="ease-in-out"
+        ></h1>
+        <h3
+          data-aos="fade-down"
+          data-aos="slide-left"
+          data-aos-delay="800"
+          data-aos-duration="300"
+          data-aos-easing="ease-in-out"
+        ></h3>
+        <div class="skills">
+          <h1
+            data-aos="slide-left"
+            data-aos-delay="600"
+            data-aos-duration="500"
+            data-aos-easing="ease-in-out"
+          ></h1>
+        </div>
+      </div>
+      <div
+        class="tech-icons"
+        data-aos="fade-up"
+        data-aos-delay="300"
+        data-aos-duration="4000"
+        data-aos-easing="ease-in-out"
+      >
+        <img src="./svgicons/html-5.svg" title="Html5" alt="Html5" />
+        <img src="./svgicons/css-3.svg" title="CSS3" alt="CSS3" />
+        <img src="./svgicons/sass.svg" title="Sass" alt="Sass" />
+        <img src="./svgicons/bootstrap.svg" title="Bootstrap" alt="Bootstrap" />
+        <img
+          src="./svgicons/javascript.svg"
+          title="JavaScript"
+          alt="JavaScript"
+        />
+        <img src="./svgicons/es6.svg" title="Es6" alt="Es6" />
+        <img src="./svgicons/react.svg" title="React" alt="React" />
+        <img src="./svgicons/redux.svg" title="Redux" alt="Redux" />
+        <img src="./svgicons/angular.svg" title="Angular" alt="Angular" />
+        <img src="./svgicons/graphql.svg" title="GraphQL" alt="GraphQL" />
+        <img
+          src="./svgicons/wordpress-icon.svg"
+          title="Wordpress"
+          alt="Wordpress"
+        />
+        <img src="./svgicons/npm.svg" title="Npm" alt="NPM" />
+        <img src="./svgicons/express.svg" title="Express" alt="Express" />
+        <img src="./svgicons/babel.svg" title="Babel" alt="Babel" />
+        <img src="./svgicons/firebase.svg" title="Firebase" alt="Firebase" />
+        <img src="./svgicons/gatsby.svg" title="Gatsby" alt="Gatsby" />
+        <img src="./svgicons/git.svg" title="Git" alt="Git" />
+        <img src="./svgicons/github-icon.svg" title="Github" alt="Github" />
+        <img src="./svgicons/prettier.svg" title="Prettier" alt="Prettier" />
+        <img src="./svgicons/emmet.svg" title="Emmet" alt="Emmet" />
+      </div>
+      <div class="down-arrow">
+        <a data-scroll href="#projects"
+          ><i class="fas fa-chevron-down fa-3x animated bounce"></i
+        ></a>
+      </div>
+    </div>
+    <!--End of Main About Me-->
+    <!--Portfolio Project Section-->
+    <section class="projects" id="projects">
+      <div class="projects-header" data-aos="fade-up">
+        <h1></h1>
+      </div>
+      <div class="project-container">
+        <div class="project-gallery">
+          <div class="project-item" data-aos="slide-right">
+            <img class="project-image" src="images/spacex.png" />
+            <div class="overlay">
+              <div class="text" id="myBtn">SpaceX Mission Log</div>
+            </div>
+          </div>
+          <div class="project-item" data-aos="slide-left">
+            <img class="project-image" src="images/comingsoon.jpg" />
+            <div class="overlay">
+              <div class="text" id="myBtn">Coming Soon</div>
+            </div>
+          </div>
+          <div class="project-item" data-aos="slide-right" data-aos-delay="300">
+            <img class="project-image" src="images/comingsoon.jpg" />
+            <div class="overlay">
+              <div class="text" id="modal">Coming Soon</div>
+            </div>
+          </div>
+          <div class="project-item" data-aos="slide-left" data-aos-delay="300">
+            <img class="project-image" src="images/comingsoon.jpg" />
+            <div class="overlay">
+              <div class="text" id="modal">Coming Soon</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Project Modals-->
+      <div id="myModal" class="modal animated slideInUp">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close"
+            ><img src="./images/titlelogo.png" alt="AD Title"
+          /></span>
+          <h3>SpaceX Mission Log</h3>
+          <img src="images/spacexmodal.png" alt="SpaceX Site Preview" />
+          <p>
+            A small SpaceX Mission Log app built using React, Express, Apollo,
+            and GraphQL. All data is coming from the SpaceX API.
+          </p>
+          <!--Modal Buttons-->
+          <div class="svg-wrapper">
+            <svg height="40" width="150" xmlns="http://www.w3.org/2000/svg">
+              <rect id="shape" height="40" width="150" />
+              <div id="text">
+                <a href="https://desolate-taiga-11502.herokuapp.com/">
+                  <span class="spot"></span>
+                  Live Site
+                </a>
+              </div>
+            </svg>
+          </div>
+          <!--Next Modal button -->
+          <div class="svg-wrapper">
+            <svg height="40" width="150" xmlns="http://www.w3.org/2000/svg">
+              <rect id="shape" height="40" width="150" />
+              <div id="text">
+                <a href="">
+                  <span class="spot"></span>
+                  See The Code
+                </a>
+              </div>
+            </svg>
+          </div>
+        </div>
+        <!--End of Project Modals-->
+      </div>
+    </section>
+    <!--End of Portfolio Project Section-->
+    <!--Contact-->
+    <div
+      class="main-contact"
+      id="contact"
+      data-aos="flip-up"
+      data-aos-delay="300"
+      data-aos-duration="4000"
+      data-aos-easing="ease-in-out"
+    >
+      <div class="contact-info">
+        <h1
+          data-aos="slide-down"
+          data-aos-delay="600"
+          data-aos-duration="6000"
+          data-aos-easing="ease-in-out"
+        >
+          <span>Want to get in touch?</span>
+        </h1>
+      </div>
+      <div class="email-phone" data-aos="fade-in-up" data-aos-delay="900">
+        <div class="email">
+          <h2><span>austindeming@gmail.com</span></h2>
+        </div>
+        <div class="phone">
+          <h2><span>(310) 741-8236</span></h2>
+        </div>
+      </div>
+      <div class="scrolluptop" data-aos="fade-in-up" data-aos-delay="600">
+        <a
+          href="#top"
+          title="Back to top"
+          class="scrollup"
+          onclick="scrollToTop();return false"
+          ><i class="fas fa-arrow-circle-up fa-3x"> </i>
+        </a>
+        <p class="scroll-text" data-aos="fade-in-up" data-aos-delay="600">
+          Scroll To Top
+        </p>
+      </div>
+    </div>
+    <!--End of Contact-->
+    <!--Footer-->
+    <footer>
+      <div class="footer">
+        <small>
+          AD Web Development | www.austindeming.com &copy; 2017-2019</small
+        >
+      </div>
+    </footer>
+    <!--End of Footer-->
+    <script src="./assets/js/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="./assets/js/smooth-scroll.js"></script>
+    <script>
+      var scroll = new SmoothScroll('a[href*="#"]', {
+        speed: 1000,
+        offset: 85
+      });
+    </script>
+  </body>
+</html>

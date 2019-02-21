@@ -1,0 +1,700 @@
+/* Main CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  height: auto;
+  width: 100%;
+}
+
+/* Main Navigation */
+.nav-container {
+  background: url('../../images/bg.jpg') center center no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vh;
+  width: auto;
+  font-family: 'Raleway', sans-serif;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
+  border-bottom: solid 1px black;
+}
+
+.main-nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: static;
+  z-index: 5;
+}
+
+.logo img {
+  height: 90px;
+  width: auto;
+  padding-top: 5px;
+  border-radius: 10px;
+}
+
+.logo a:hover {
+  color: rgb(65, 177, 179);
+}
+
+.nav-list-item {
+  display: flex;
+  justify-content: space-around;
+  width: 40%;
+  text-transform: uppercase;
+}
+
+.nav-list-item li {
+  list-style: none;
+}
+
+.nav-list-item li:hover {
+  color: rgb(65, 177, 179);
+  transition: color 0.3s;
+}
+
+.nav-list-item a {
+  color: azure;
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-weight: 300;
+  size: 14px;
+}
+
+/* Side Menu */
+
+.side-nav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  overflow-x: hidden;
+  padding-top: 85px;
+  transition: 0.5s;
+}
+
+.side-nav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 24px;
+  color: azure;
+  display: block;
+  transition: 0.3s;
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.side-nav a:hover {
+  color: rgb(65, 177, 179);
+}
+
+.sidenav .btn-close {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 24px;
+  margin-right: 50px;
+}
+
+.open-side {
+  display: none;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+/* End of Nav */
+
+/* Header */
+.main-header {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.main-header i {
+  display: inline-block;
+  text-align: center;
+  padding-top: 30px;
+  color: azure;
+  cursor: pointer;
+}
+
+.main-header i:hover {
+  color: rgb(65, 177, 179);
+}
+
+.social-icons a {
+  display: inline-block;
+  margin: 2px;
+  padding-top: 30px;
+  padding-bottom: 25px;
+}
+
+.main-header h1 a {
+  text-decoration: none;
+  color: azure;
+  font-size: 56px;
+  font-weight: 600;
+}
+/* End of Header */
+
+/* Main About Me */
+.main-container {
+  background: linear-gradient(#373b44, #4286f4);
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  padding-top: 10px;
+  border-bottom: solid 1px black;
+}
+
+.main-container .about-header h1::before {
+  content: 'About Me';
+  color: azure;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+  max-width: 55%;
+  text-align: right;
+  text-transform: uppercase;
+  font-weight: lighter;
+  letter-spacing: 3px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.main-container .about-header h3::before {
+  content: "I'm a Los Angeles based web designer & web developer. I focus on creating clean, user-friendly experiences.";
+  color: azure;
+  background-color: rgb(65, 177, 179);
+  display: flex;
+  text-align: center;
+  padding: 10px;
+  max-width: 100%;
+  margin-left: 10%;
+  margin-right: 10%;
+  text-transform: uppercase;
+  font-weight: lighter;
+  letter-spacing: 3px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.main-container .about-header .skills h1::before {
+  content: 'Technologies Used';
+  color: azure;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: flex-start;
+  padding: 10px;
+  margin-left: 35%;
+  max-width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: lighter;
+  letter-spacing: 3px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.about-header {
+  padding-top: 40px;
+}
+
+.main-container .tech-icons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-top: 15px;
+}
+
+.main-container .tech-icons img {
+  padding: 10px;
+  transition: all 0.2s ease-in-out;
+  max-width: 100%;
+  height: auto;
+}
+
+.main-container .tech-icons img:hover {
+  transform: scale(1.1);
+}
+
+.main-container a {
+  text-decoration: none;
+}
+
+.main-container i {
+  display: flex;
+  justify-content: center;
+  padding-top: 25px;
+  padding-bottom: 15px;
+  color: azure;
+}
+
+.main-container i:hover {
+  color: rgb(65, 177, 179);
+}
+/* End of Main About Me */
+
+/* Portfolio Project Section */
+section {
+  background: linear-gradient(270deg, #18f0b8, #18a2f0, #db5640);
+  background-size: 600% 600%;
+  -webkit-animation: Gradient 60s ease infinite;
+  -moz-animation: Gradient 60s ease infinite;
+  animation: Gradient 60s ease infinite;
+  padding-top: 10px;
+  max-width: 100%;
+  height: auto;
+}
+
+@-webkit-keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-moz-keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+section h1::before {
+  content: 'Projects';
+  color: azure;
+  background-color: rgb(0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+  max-width: 100%;
+  margin-left: 40%;
+  margin-right: 40%;
+  text-transform: uppercase;
+  font-weight: lighter;
+  letter-spacing: 3px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.projects-header h1 {
+  padding-top: 40px;
+}
+
+.project-container {
+  max-width: 100rem;
+  margin: 0 auto;
+  padding: 0 2rem 2rem;
+}
+
+.project-container a {
+  text-decoration: none;
+}
+
+.project-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: -1rem -1rem;
+}
+
+.project-item {
+  flex: 1 0 24rem;
+  margin: 3rem;
+  box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+  position: relative;
+  max-width: 400px;
+  z-index: 1;
+}
+
+.project-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.project-item:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 3px;
+  cursor: pointer;
+  border: solid 1px azure;
+  padding: 10px;
+}
+/* End of Portfolio Project Section */
+
+/* Project Modals */
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: rgba(0, 0, 0, 0.8);
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  max-width: 80%; /* Could be more or less, depending on screen size */
+  height: auto;
+}
+
+.modal-contact {
+  background-color: rgba(0, 0, 0, 0.8);
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  max-width: 80%; /* Could be more or less, depending on screen size */
+  height: auto;
+}
+
+.modal-content h3 {
+  color: azure;
+  text-align: center;
+  margin: 10px;
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 3px;
+}
+
+.modal-content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal-content p {
+  color: azure;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  margin: 10px;
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+
+.modal-content img {
+  display: inline-block;
+  height: auto;
+  width: 75%;
+  margin: 5px;
+  clear: left;
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.spot {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+/*
+  This is the outer svg wrapper that the SVG itself will 
+  fill. Multiple svg-wrapper classes can be put side by side.
+*/
+.svg-wrapper {
+  margin-top: 5px;
+  position: relative;
+  width: 150px;
+  /*make sure to use same height/width as in the html*/
+  height: 40px;
+  display: inline-block;
+  border-radius: 3px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+/*
+  This is where we define the fill, color, thickness,
+  and stroke pattern of the SVG when there is no hover.
+  The dasharray and offset together define the line position
+  under the words. Here's also where the transition speed is set.
+*/
+#shape {
+  stroke-width: 6px;
+  fill: transparent;
+  stroke: rgb(65, 177, 179);
+  stroke-dasharray: 85 400;
+  stroke-dashoffset: -220;
+  transition: 1s all ease;
+}
+/* 
+  Pushing the text up into the SVG. Without this the
+  text would be below the div's.
+*/
+#text {
+  margin-top: -35px;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 2px;
+}
+
+#text a {
+  color: white;
+  text-decoration: none;
+  font-weight: 100;
+  font-size: 1.1em;
+}
+/* 
+  Changing the shape on hover. I change the color of the stroke,
+  make it thinner, then set it to again wrap around the entire parent element.
+*/
+.svg-wrapper:hover #shape {
+  stroke-dasharray: 50 0;
+  stroke-width: 3px;
+  stroke-dashoffset: 0;
+  stroke: #06d6a0;
+}
+/* End Project Modals */
+
+/* Contact Section */
+.main-contact {
+  background: url('../../images/losangeles.jpg') center center no-repeat;
+  background-size: cover;
+  padding-top: 15px;
+  border-top: solid 4px black;
+  height: 450px;
+  width: 100%;
+}
+
+.main-contact h1 {
+  display: flex;
+  justify-content: center;
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 3px;
+  text-align: center;
+  color: azure;
+  text-transform: uppercase;
+  font-weight: lighter;
+}
+
+.main-contact h1 span {
+  background-color: black;
+  padding: 10px;
+}
+
+.main-contact h2 {
+  display: flex;
+  justify-content: center;
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 3px;
+  color: azure;
+  font-weight: lighter;
+}
+
+.main-contact h2 span {
+  background-color: black;
+  padding: 10px;
+}
+
+.main-contact i {
+  display: flex;
+  justify-content: center;
+  color: azure;
+  padding-top: 30px;
+}
+
+.main-contact a {
+  text-decoration: none;
+}
+
+.main-contact i:hover {
+  color: rgb(65, 177, 179);
+}
+
+.scrolluptop p {
+  display: flex;
+  justify-content: center;
+  color: azure;
+  padding-top: 15px;
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 2px;
+}
+/* End of Contact */
+
+/* Footer */
+footer {
+  margin-top: -25px;
+}
+
+.footer {
+  height: 90px;
+  width: 100%;
+  background-color: black;
+  margin-top: -25px;
+  border-top: solid 2px #aaa;
+}
+
+.footer small {
+  color: azure;
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 2px;
+  text-align: center;
+}
+/* End of Footer */
+
+/* Mobile Media Queries */
+@media screen and (max-width: 1120px) {
+  .nav-list-item {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1120px) {
+  .open-side {
+    display: block !important;
+  }
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 216px) and (max-width: 500px) {
+  .main-container .about-header .skills h1::before {
+    content: 'Technologies Used';
+    color: azure;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px;
+    margin-left: 15%;
+    max-width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: lighter;
+    letter-spacing: 3px;
+    font-family: 'Raleway', sans-serif;
+  }
+}
+
+@media screen and (min-width: 216px) and (max-width: 998px) {
+  .projects h1::before {
+    content: 'Projects';
+    color: azure;
+    background-color: rgb(0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    max-width: 100%;
+    margin-left: 25%;
+    margin-right: 25%;
+    text-transform: uppercase;
+    font-weight: lighter;
+    letter-spacing: 3px;
+    font-family: 'Raleway', sans-serif;
+  }
+}
+
+@media screen and (min-width: 375px) and (max-width: 815px) {
+  .main-header h1 a {
+    text-decoration: none;
+    color: azure;
+    font-size: 32px;
+    font-weight: 600;
+  }
+}
+/* End of Mobile Media Queries */
